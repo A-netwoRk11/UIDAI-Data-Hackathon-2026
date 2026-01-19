@@ -1,15 +1,15 @@
-### "Aadhaar Enrollment-to-Biometric Drop-off Analysis Across India"
-# domain: "Public Policy | Data Analytics | Governance"
-# organizer: "UIDAI Data Hackathon"
-## objective: 
+# "Aadhaar Enrollment-to-Biometric Drop-off Analysis Across India"
+## domain: "Public Policy | Data Analytics | Governance"
+## organizer: "UIDAI Data Hackathon"
+### objective: 
 Analyze enrollment-to-biometric drop-offs in Aadhaar registration across Indian states to identify systemic gaps, age-wise variations, and state-level disparities using trivariate analysis.
 
 ## problem_statement:
 Despite high Aadhaar enrollment volumes, a significant proportion of enrollments do not complete biometric capture. This project investigates where and to what extent enrollment-to-biometric drop-offs occur across Indian states and how these patterns vary by age group.
 
 ## datasets:
-# source: "UIDAI Hackathon Datasets"
-# types:
+### source: "UIDAI Hackathon Datasets"
+### types:
     - enrollment_data:
         columns:
           - age_0_5
@@ -23,7 +23,7 @@ Despite high Aadhaar enrollment volumes, a significant proportion of enrollments
         columns:
           - bio_age_5_17
           - bio_age_17_
-  # common_dimensions:
+  ### common_dimensions:
     - date
     - state
     - district
@@ -47,14 +47,14 @@ Despite high Aadhaar enrollment volumes, a significant proportion of enrollments
         formula: "(Enrollment - Biometric) / Enrollment"
 
 ## analysis:
-  # univariate:
+  ### univariate:
     - Enrollment distribution
     - Biometric distribution
     - Age-group composition
-  # bivariate:
+  ### bivariate:
     - State-wise enrollment vs biometric comparison
     - Time-series trend analysis
-  # trivariate:
+  ### trivariate:
     - bubble_chart:
         x_axis: "Enrollment (Age 5+, log scale)"
         y_axis: "Drop-off Rate"
@@ -65,20 +65,20 @@ Despite high Aadhaar enrollment volumes, a significant proportion of enrollments
         metric: "Drop-off Rate"
 
 ## tools:
-  # programming_language: "Python"
-  # libraries:
+  ### programming_language: "Python"
+  ### libraries:
     - pandas
     - numpy
     - matplotlib
     - seaborn
-  # environment:
+  ### environment:
     - Jupyter Notebook
     - Excel
 
 ## data_availability:
-  # notice: 
+  ### notice: 
     The datasets used in this project were provided by UIDAI exclusively for the purpose of this hackathon. Raw and processed datasets are not publicly shared in this repository.
-  # repository_contains:
+  ### repository_contains:
     - analysis_code
     - data_processing_logic
     - visualization_workflows
